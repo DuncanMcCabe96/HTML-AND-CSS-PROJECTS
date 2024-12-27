@@ -1,2 +1,2 @@
-# HTML-AND-CSS-PROJECTS
-Course work for HTML and CSS with TEch Academy
+## HTML-AND-CSS-PROJECTS
+This repository countains course work for HTML and CSS with Tech Academy
