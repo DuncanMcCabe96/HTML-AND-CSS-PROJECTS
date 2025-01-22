@@ -100,7 +100,7 @@ img{
     padding: 10px ;
 }
 
-/*groups elements inside a div element together and froces any floating elements outside of the div udner it with this class selector*/
+/*groups elements inside a div element together and forces any floating elements outside of the div under it with this class selector*/
 .container{
     background-size: 100% !important;
     margin: 0px -60px 50px -40px;
