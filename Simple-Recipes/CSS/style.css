@@ -329,7 +329,7 @@ input[type="button"]:hover{
 
 /*CONTACT FORM CSS*/
 
-/*sets up the content within the iv tag conaining the ID contact to be centered on the webpage*/
+/*sets up the content within the div tag conaining the ID contact to be centered on the webpage*/
 #contact{
     display: block;
     margin-bottom: 70px;

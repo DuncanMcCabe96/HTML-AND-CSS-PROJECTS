@@ -1,0 +1,86 @@
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:rgb(34, 54, 165);
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*this will specifically target the input tags that are nested within the form tags*/
+form input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*transitions abck to light grey when a user clicks away froma n input field*/
+}
+
+form input:focus{
+    border: 2px solid rgb(0, 2, 10);
+    color: black;
+    outline: none; /*Removes default border added when the focus psuedo class ios triggered*/
+    transition: 0.3s ease-out;
+}
+
+label{
+    font-family: 'Josefin Slab', serif;/*fonts from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /*Will allow the user to resize the text area in width and height*/
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 5px;         
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+    transition: 0.3s ease-out; /*Will transition back to light gray*/
+}
+
+textarea:focus{
+    color: black;
+    border: 3px solid rgb(0, 0, 0);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: rgb(1, 9, 128);
+    border: none;
+    border-radius: 35px;
+    font-family: 'Josefin Slab', serif;/*font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right; /*Positions the submit button to the bottom right of the form*/
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(219, 17, 47);
+    color: black;
+}
