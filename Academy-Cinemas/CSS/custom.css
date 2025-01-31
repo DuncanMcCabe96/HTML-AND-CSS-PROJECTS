@@ -1,0 +1,331 @@
+/*Font Passion One from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+/*Font Yesteryear from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+/*Creates global CSS variables that can be reused 
+throughout the file*/
+:root{
+    --main-color: rgb(126, 133, 130);
+    --main-color-accent: rgb(237, 192, 3);
+    --main-color-transparent: rgba(126, 133, 130, 0.8);
+    --secondary-color: rgba(128, 0, 0, 0.9);
+    --accent-color: rgb(36, 36, 36);
+    --accent-text-color: rgb(255, 255, 255);
+    --main-font-family: 'Passion One', cursive;
+    --secondary-font-family: 'Yesteryear', cursive;
+}
+
+html{
+    scroll-padding-top: 100px;
+}
+
+body{
+    background-image: url(../images/theater-curtains.jpg);
+    background-size: 100% 120%; /*100% horizontally and
+    120% vertically*/
+    background-attachment: fixed;
+    overflow-x: hidden; /*Removes left to right scroll bar*/
+}
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid rgb(98, 0, 0);
+    height: 100px;
+}
+
+/*Affects the title in the navbar Academy Cinemas*/
+.navbar-brand{
+    color: var(--main-color-accent);
+    font-family: var(--main-font-family);
+    font-size: 45px;
+    padding-left: 30px;
+}
+
+.nav-link{
+    color: var(--main-color-accent);
+    font-family: var(--main-font-family);
+    font-size: 35px;
+}
+
+/*Affects the hover state of the links in the navbar*/
+.nav-link:hover{
+    color: var(--main-color-transparent);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*Sets the color of the link that has been clicked on 
+in other words the "active link"*/
+.nav-link:focus{
+    color: var(--accent-text-color);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*Adjusts the left padding of the navbar links*/
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 1.5rem;
+}
+
+/*MOVIE DROP DOWN MENU*/
+
+/*Targets the drop down menu that contains the links for
+each movie title*/
+.dropdown-menu{
+    border: none; /*Removes the thin black border*/
+    border-radius: 0;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.4);
+    background-color: var(--main-color);
+    padding: 0px; /*Overrides Bootstraps padding on the 
+    top and bottom of the drop down menu*/
+}
+
+/*Sets up the styling for each movie link in the 
+drop down menu*/
+.dropdown-item{
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px; /*Adds some space to the top of 
+    each link to center them*/
+    padding-bottom: 20px; /*Adds some space to the bottom
+    of each link to center them*/
+    border-bottom: 2px solid rgb(117, 77, 13);
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+    color: var(--accent-text-color);
+    background-color: var(--main-color);
+}
+
+/*MOBILE MENU*/
+
+.navbar-toggler{
+    border: none;
+    transition: 0.5s ease;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
+    transition: 0.5s ease;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28237, 192, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*HEADER IMAGE*/
+
+#header-image{
+    padding-top: 150px;
+}
+
+/*GENERAL STYLING*/
+
+h1, h3, h4, h5, p{
+    cursor: default; /*Changes the cursor back to the 
+    default arrow instead of a text cursor when hovering
+    your mouse over text*/
+}
+
+h1{
+    font-family: var(--main-font-family);
+    color: var(--main-color-accent);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+    font-size: 100px;
+}
+
+h3{
+    font-family: var(--main-font-family);
+    font-size: 50px;
+}
+
+h4{
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+}
+
+h5{
+    font-size: 30px;
+    font-family: var(--main-font-family);
+}
+
+b{
+    font-weight: 600;
+}
+
+img{
+    border-radius: 5px;
+}
+
+/*MOVIE CARDS*/
+
+.container{
+    padding: 100px;
+}
+
+.card{
+    border: 5px solid var(--main-color);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.spacer{
+    padding-top: 50px;
+}
+
+/*BUTTONS*/
+
+/*Creates the main styling for buttons that contain the 
+Bootstrap .btn class*/
+.btn{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
+
+.btn:focus{
+    border-color: transparent; /*Overrides Bootstraps dark
+    border when the user clicks on the button*/
+    background-color: var(--main-color);
+    color: var(--accent-text-color);
+}
+
+.btn:hover{
+    border-color: transparent;
+    background-color: var(--main-color);
+    color: var(--accent-text-color);
+}
+
+/*Added styling for yellow buttons for the buy tickets and
+contact form sections*/
+.yellow-btn{
+    background-color: var(--main-color-accent);
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: var(--accent-color);
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.yellow-btn:hover, .yellow-btn:focus{
+    background-color: var(--main-color-accent);
+    color: var(--accent-text-color);
+}
+
+/*TICKET CARDS*/
+
+/*Specifically styles the card class within the element
+containing the tickets id*/
+#tickets .card{
+    padding: 40px;
+    height: 250px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.form-select{
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    border: 3px solid var(--main-color);
+    transition: border-color 0.5s ease-in;
+}
+
+.form-select:focus{
+    border-color: var(--secondary-color);
+    box-shadow: none; /*Overrides bootstraps box shadow*/
+    transition: 0.5s ease-in;
+}
+
+/*Select number of tickets input*/
+input[type="number"]{
+    width: 70px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    transition: border-color 0.5s ease-in;
+}
+
+input[type="number"]:focus{
+    border: 3px solid var(--secondary-color);
+    transition: 0.5s ease-in;
+    outline: 0; /*Removes the default outline set by 
+    the browser*/
+}
+
+/*CONTACT FORM*/
+
+.form-control{
+    border: 3px solid var(--main-color);
+    transition: 1s ease;
+}
+
+/*Overrides Bootstrap's focus effect*/
+.form-control:focus{
+    color: #212529;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0px .25rem var(--main-color);
+}
+
+/*Adjusts the contact form submit button to the right
+side of the screen*/
+#contact-submit{
+    float: right;
+}
+
+/*FOOTER*/
+
+footer{
+    border-top: 5px solid var(--main-color);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px -15px 0px -15px; /*Extends the footer beyond
+    the webpage on the left and right sides leaving no
+    white space*/
+}
+
+.footer-text{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 30px;
+}
+
+/*Specifically styles the footer image separate from the 
+other images on the page and overrides the img type 
+selector styling*/
+.footer-img{
+    width: auto;
+    height: 130px;
+}
+
+/*POPOVERS*/
+
+.star-rating{
+    width: 80%;
+}
+
+/*TOAST*/
+
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
