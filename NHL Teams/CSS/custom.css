@@ -1,0 +1,156 @@
+/*centers anything with this class*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    filter: invert(20%);
+    border-radius: 15px;
+    max-width: 100%;
+    height: 360px;
+    border-radius: 50px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+div.a {
+    text-align: center;
+}
+
+p {
+    font-weight: 700;
+}
+
+
+table, tr, td {
+    border: 5px solid;
+    padding: 10px;
+}
+
+th {
+    padding: 110px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.covered {
+    font-weight: 700;
+    font-size: 75px;
+    text-decoration: solid;
+    text-shadow: 0px 1px 4px rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.covered2 {
+    font-weight: 700;
+    font-size: 35px;
+    text-decoration: solid;
+    text-shadow: 0px 1px 4px rgb(77, 64, 64);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-bar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+ul{
+    display: flex; 
+    list-style-type: none; 
+    align-items: center;
+    margin: -8px -8px 0px -8px; 
+    background-color: rgb(10, 10, 10)
+}
+
+li{
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+a{
+    display: block; 
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 4px rgb(255, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.3s ease-in;
+}
+
+a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+p{
+    font-size: 40px;
+    text-shadow: rgb(202, 202, 202);
+}
+
+p:hover{
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    color: rgb(65, 65, 65);
+    text-align: center;
+    text-shadow: 0px 1px 4px;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 100px;
+    border-style: none;
+}
+
+img:hover{
+    filter: blur(5px);
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: filter background-color 0.3s ease-in-out;
+}
+
+video{
+    position: fixed;
+    top: auto;
+    left: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#contact{
+    font-size: 30px;
+    font-weight: 900;
+}

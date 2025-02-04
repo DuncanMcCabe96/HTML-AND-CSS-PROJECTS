@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Duncan McCabe's Portfolio Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<!--Body-->
+
+<body class="Background">
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <a class="active1" href="#Home">Home</a>
+        <a class="active2" href="#About">About</a>
+        <a class="active3" href="#GitHub">GitHub</a>
+        <a class="active4" href="#Contact">Contact</a>
+    </div>
+    <!--BREAKS TO ADD PACE BETWEEN NAVBAR AND FIRST HEADING-->
+    <br>
+    <br>
+
+    <!--BACKGROUND VIDEO-->
+    <div id="Home">
+        <video autoplay muted loop id="Tech_Video">
+            <source src="images/timelapse.mp4" type="video/mp4">
+            <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
+            Your Browser does not support HTML5 Video
+        </video>
+    </div>
+
+    <!--VIDEO TEXT-->
+    <div class="Video-Text">
+        <h1 class="header-text">Duncan McCabe's Portfolio</h1>
+        <b>
+            <p class="center">
+                <q>I'm not a great programmer; I'm just a good programmer with great habits.</q>
+                <br>
+                <br>-Kent Bock
+                <br>
+                <br> Hello, my name is Duncan McCabe, and this is my portfolio site. It will contain information about
+                my background and experience
+                <br> Thank you for stopping in!
+            </p>
+        </b>
+    </div>
+
+    <!--ABOUT SECTION-->
+    <div class="Row" id="About">
+        <!--LEFT COLUMN-->
+        <div class="Column_2">
+            <a href="https://www.linkedin.com/in/duncan-mccabe-a2196a329/" target="_blank"><img src="images/Duncan.jpeg" alt="Image of Duncan"></a>
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p class="center">
+                I am a software developer based out of Denver Colorado.
+                <br>
+                <br>I am starting a career in the tech industry along with my wife <a
+                    href="https://www.linkedin.com/in/victoria-mccabe-9a3bb926b/" target="_blank">Victoria</a> in hopes to
+                have it help contribute to a better future for us.
+                <br>
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                    Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and
+                programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                <br>
+                <br>I am a full-stack developer and would love to work with you on your project. <a
+                    href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!--GITHUB SECTION-->
+    <div class="Row" id="GitHub">
+        <!--LEFT COLUM-->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p class="center">
+                You can check out my finished and current projects on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/DuncanMcCabe96" target="_blank">Duncan McCabe GitHub</a></p>
+            </p>
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="Column_2">
+            <a href="https://github.com/DuncanMcCabe96" target="_blank"><img src="images/GitHub-logo.png"
+                    alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!--CONTACT SECTION-->
+    <div class="Row" id="Contact">
+        <!--CONTACT IMAGE LEFT COLUMN-->
+        <div class="Column_1 Column_tall">
+            <h1>Contact</h1>
+            <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA< WE ARE LEAVING IT BLANK-->
+            <form action="" method="POST">
+                <!--Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute-->
+                <label>Name:</label>
+                <input type="text" placeholder="Enter name here">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Enter email here">
+                <label>Message:</label>
+                <input type="text" name="Message" id="Message" placeholder="Enter your message here">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer>
+        <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+    </footer>
+</body>
