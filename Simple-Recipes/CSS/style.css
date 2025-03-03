@@ -406,3 +406,74 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: rgb(247, 177, 188);
 }
+
+/*RECIPE MODAL*/
+
+.recipe-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);/*Creates a transparent background that covers the whole screen*/
+    width: 100%;
+    height: 100%;
+}
+
+.recipe-content{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: 15vh;
+    left: 27vw;
+    width: 45vw;
+    height: 70%;
+    box-shadow: 0 2px 10px 5px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.close-btn{
+    color: rgb(1, 128, 106);
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    padding-right: 10px;
+}
+
+.modal-header{
+   padding-top: 20px;
+}
+
+.modal-body{
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.rp-column-1{
+    width: 33%;
+}
+
+.rp-column-2{
+    width: 67%;
+}
+
+.recipe-list{
+    margin-left: -30px;
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+    display: block; /*This will override the flex value property in the ul type selector and list each item one after the other*/
+    border: none; /*Overrides the border property in the ul type selector*/
+    background-color: transparent; /*Overrides the background color property in the ul type selector*/
+    line-height: 1.5;
+    text-align: center;
+}
+
+.recipe-directions{
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
