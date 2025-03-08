@@ -51,3 +51,20 @@ function loading(){
             document.getElementById("spinner").style.display = "none";
         }, 2000);//miliseconds
 }
+//JQuery
+
+//Shrinks header size when the document is scrolled down by 80 pixels
+$(document).on("scroll", function(){
+    //when the webpage is scrolled down from the top by 50px this if statement will trigger
+    if ($(document).scrollTop()>50){
+        //once the 50px requirement has been met add the nav-shrink class selector to the same html element that has the nav class
+        $("nav").addClass("nav-shrink");
+        //Adjust the position of the mobile drop menu to accomodate the new height decrease
+        $("div.navbar-collapse").css("margin-top", "-6px");
+    } else {
+        //if the webpage has not been scrolled down or is back at t;he top the nav-shrink class selector is removed from the HTML element with the nav class selector
+        $("nav").removeClass("nav-shrink");
+        //the margin for the drop down menu is now returned to is original amount
+        $("div.navbar-collapse").css("margin-top", "14px");
+    }
+});
