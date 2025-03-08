@@ -57,12 +57,9 @@
       <!--BEN HUR-->
       <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
         <div class="col-lg-5 mx-auto">
-          <span class="d-inline-block" tabindex="0" 
-          data-bs-toggle="popover" 
-          data-bs-trigger="hover focus" 
-          data-bs-img="images/four-and-half-stars.png"
-          data-bs-title="Ben Hur Rating">
-          <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben-Hur movie poster">
+          <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-img="images/four-and-half-stars.png" data-bs-title="Ben Hur Rating">
+            <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben-Hur movie poster">
           </span>
         </div>
         <div class="card col-lg-5 mx-auto">
@@ -135,24 +132,18 @@
           </div>
         </div>
         <div class="col-lg-5 mx-auto">
-          <span class="d-inline-block" tabindex="0" 
-          data-bs-toggle="popover" 
-          data-bs-trigger="hover focus" 
-          data-bs-img="images/four-stars.png"
-          data-bs-title="The Day the Earth Stood Still Rating">
-          <img src="images/earth-stood-still.jpg" class="img-fluid" alt="The Day the Earth Stood Still movie poster">
+          <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-img="images/four-stars.png" data-bs-title="The Day the Earth Stood Still Rating">
+            <img src="images/earth-stood-still.jpg" class="img-fluid" alt="The Day the Earth Stood Still movie poster">
           </span>
         </div>
       </div>
       <!--VERTIGO-->
       <div class="d-flex flex-row flex-wrap spacer" id="vertigo">
         <div class="col-lg-5 mx-auto">
-          <span class="d-inline-block" tabindex="0" 
-          data-bs-toggle="popover" 
-          data-bs-trigger="hover focus" 
-          data-bs-img="images/four-and-half-stars.png"
-          data-bs-title="Vertigo Rating">
-          <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo movie poster">
+          <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-img="images/four-and-half-stars.png" data-bs-title="Vertigo Rating">
+            <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo movie poster">
           </span>
         </div>
         <div class="card col-lg-5 mx-auto">
@@ -228,8 +219,8 @@
             </div>
           </div>
         </div>
-         <!--NUMBER OF TICKETS-->
-         <div class="col">
+        <!--NUMBER OF TICKETS-->
+        <div class="col">
           <div class="card text-center">
             <h5 class="card-title">Please select number of tickets</h5>
             <div class="card-body">
@@ -241,10 +232,17 @@
       <!--BUY TICKETS BUTTON-->
       <div class="row justify-content-center">
         <div class="col-auto">
-          <button type="submit" class="btn yellow-btn" onclick="buyTickets()">Buy Tickets</button>
+          <button type="submit" class="btn yellow-btn" id="press" onclick="loading()">Buy Tickets</button>
+        
+        <!--LOADING-->
+        <div class="col-auto position-relative">
+          <div class="spinner-grow position-absolute top-50 start-50 translate-middle" id="spinner"
+            style="display: none;">
+            <span class="visually-hidden">Loading...</span>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
   </section>
   <!--BOOTSTRAP TOAST-->
   <div id="toastDisplay" class="custom-toast toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -282,9 +280,9 @@
     <div class="container-fluid">
       <footer class="d-flex flex-wrap justify-content-center align-items-center py-3">
         <p class="col-md-4 mb-0 footer-text">&copy; Academy Cinemas</p>
-    
+
         <img src="images/logo.png" class="col-md-4 footer-img" alt="Academy Cinemas logo">
-    
+
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item"><a href="#now-playing" class="nav-link px-2 footer-text">Now Playing</a></li>
           <li class="nav-item"><a href="#tickets" class="nav-link px-2 footer-text">Tickets</a></li>
@@ -293,7 +291,13 @@
       </footer>
     </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="javascript/javascript.js"></script>
 </body>
+
 </html>

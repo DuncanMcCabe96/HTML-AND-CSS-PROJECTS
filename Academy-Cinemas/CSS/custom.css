@@ -221,11 +221,32 @@ contact form sections*/
     width: 150px;
     margin-top: 20px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .yellow-btn:hover, .yellow-btn:focus{
     background-color: var(--main-color-accent);
     color: var(--accent-text-color);
+}
+
+/* Update spinner-grow styling to match button exactly */
+.spinner-grow {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 150px !important;
+    height: 65px !important;  /* Match button height */
+    background-color: var(--main-color-accent);
+    border-radius: 40px;
+    margin: 20px 0 40px 0;
+}
+
+/* Add positioning context for the container */
+.position-relative {
+    width: 150px;
+    height: 105px;  /* Account for button height + margins */
+    margin: 0 auto;
 }
 
 /*TICKET CARDS*/
